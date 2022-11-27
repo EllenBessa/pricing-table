@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+body {
+  background-color: var(--page-background);
+}
+
+header {
+  background-color: var(--blue);
+  height: 450px;
+
+  text-align: center;
+}
+
+header h1 {
+  padding-top: 100px;
+
+  font-size: 48px;
+  color: var(--page-background);
+}
+
+header p {
+  margin: 20px auto 0;
+
+  width: 500px;
+  line-height: 160%;
+
+  color: var(--page-background);
+}
