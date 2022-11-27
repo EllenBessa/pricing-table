@@ -9,7 +9,10 @@
   --yellow: #ffcc29;
   --blue: #1d539e;
   --gray: #828799;
-  --page-background: #f9fbfc;
+  --page-background: #e5e5e5;
+  --card-background: #ffffff;
+  --divider-color: #eeeeee;
+  --secondary-text-color: #828799;
 }
 
 body {
@@ -37,4 +40,82 @@ header p {
   line-height: 160%;
 
   color: var(--page-background);
+}
+
+.container {
+  max-width: 1105px;
+  width: 100%;
+
+  margin: -138px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+
+  height: 470px;
+
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.card header {
+  all: unset;
+
+  width: 100%;
+}
+
+.card header span {
+  font-weight: 600;
+  font-size: 18px;
+
+  display: block;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price strong {
+  margin-top: 20px;
+
+  line-height: 1;
+  font-size: 36px;
+}
+
+.price span {
+  font-size: 18px;
+  height: 100%;
+}
+
+.price span:first-child {
+  font-weight: bold;
+}
+
+.price span:last-child {
+  padding-left: 6px;
+
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+.card header p {
+  all: unset;
+
+  display: block;
+  margin-top: 10px;
+
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.divider {
+  margin: 20px 0;
+
+  height: 2px;
+  background-color: var(--divider-color);
 }
