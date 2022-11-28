@@ -119,3 +119,16 @@ header p {
   height: 2px;
   background-color: var(--divider-color);
 }
+
+.plan-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.plan-info ul li {
+  margin-top: 20px;
+}
+
+.plan-info ul li::marker {
+  content: "✔️ ";
+}
