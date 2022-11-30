@@ -55,9 +55,9 @@ header p {
 }
 
 .card {
-  padding: 30px;
-
   height: 470px;
+
+  overflow: hidden;
 
   border-radius: 8px;
   background-color: var(--card-background);
@@ -156,4 +156,56 @@ header p {
 .sign-button:hover {
   background-color: var(--blue);
   color: var(--card-background);
+}
+
+.prominence-header {
+  padding: 24px 30px;
+
+  background-color: var(--yellow);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prominence-header span:first-child {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.prominence-header span:last-child {
+  padding: 8px 24px;
+
+  color: var(--card-background);
+  font-size: 12px;
+  font-weight: 600;
+
+  background-color: var(--blue);
+
+  border-radius: 40px;
+}
+
+.card-padding-x {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card-padding-y {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.full-heigth {
+  flex: 1;
+
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.prominence-card {
+  margin-top: -10px;
+  height: 490px;
 }
